@@ -1,0 +1,61 @@
+# --- Configuração e parametrização ---
+hydra-core>=1.3.1,<1.4
+omegaconf==2.3.0
+
+# --- MLflow e tracking ---
+mlflow>=3.0.0,<3.2
+wandb==0.16.6
+optuna-integration[mlflow]
+
+# --- Banco de dados, IO e nuvem ---
+SQLAlchemy>=1.4,<3.0
+psycopg2-binary
+boto3
+
+# --- Deep Learning (CUDA 12.6) ---
+torch==2.6.0+cu126
+torchvision==0.21.0+cu126
+torchaudio==2.6.0+cu126
+# Para CUDA 12.6, mantenha esse índice:
+--extra-index-url https://download.pytorch.org/whl/cu126
+
+# --- PyTorch Ecosystem ---
+pytorch-lightning
+lightning-flash[text]
+pytorch-forecasting
+
+# --- Machine Learning ---
+lightgbm
+optuna
+
+# --- Time series e estatística ---
+prophet
+statsmodels
+
+# --- Visualização, progresso e monitoramento ---
+tensorboardX
+tensorboard
+plotly
+tqdm
+
+# --- Utilidades, logging e config ---
+typer
+loguru
+python-dotenv
+GPUtil
+
+# --- Jupyter e extensões ---
+jupyterlab>=4.0.0
+notebook>=7.0.0
+jupyter_server>=2.0.0
+jupyter_contrib_nbextensions
+jupyter_nbextensions_configurator
+
+# --- PyData stack ---
+pandas
+numpy
+scipy
+scikit-learn
+
+# --- Compatibilidade ---
+protobuf<4.0.0
