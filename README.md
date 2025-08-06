@@ -58,8 +58,8 @@ O repositório demonstra:
 ### 1. Clonando o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/carloseduds/TS_Forecast_DL_TFT_dailySales.git
+cd TS_Forecast_DL_TFT_dailySales
 ```
 
 ### 2. Subindo a Infraestrutura
